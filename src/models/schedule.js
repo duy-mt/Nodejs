@@ -16,7 +16,7 @@ module.exports = (sequelize, DataTypes) => {
   Schedule.init({
     currentNumber:DataTypes.INTEGER,
     maxNumber: DataTypes.INTEGER,
-    date: DataTypes.TYPE,
+    date: DataTypes.STRING,
     timeType: DataTypes.STRING,
     doctorId: DataTypes.INTEGER,
   }, {

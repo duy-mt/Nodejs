@@ -10,7 +10,10 @@ module.exports = {
     // lastName: DataTypes.STRING,
     // address: DataTypes.STRING,
     // gender: DataTypes.BOOLEAN,
-    // roleid: DataTypes.STRING
+    // roleId: DataTypes.STRING,
+    // phonenumber: DataTypes.STRING,
+    // positionId: DataTypes.STRING,
+    // image: DataTypes.STRING,
     up: (queryInterface, Sequelize) => {
       return queryInterface.bulkInsert('Users', [{
         email: 'admin@gmail.com',
@@ -19,8 +22,10 @@ module.exports = {
         lastName: 'Duy',
         address: 'Ha Noi',
         gender: '1',
-        typeRole: 'ROLE',
-        keyRole: 'R1',
+        roleId: '1',
+        phonenumber: '0359093620',
+        positionId: '',
+        image: '',
         createdAt: new Date(),
         updatedAt: new Date()
       }]);
