@@ -8,4 +8,4 @@ let CreateUserController = (req, res) => {
 
 module.exports = {
     CreateUserController: CreateUserController
-}
+}                                                                               

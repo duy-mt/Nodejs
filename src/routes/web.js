@@ -10,7 +10,9 @@
     let initWebRouter = (app) => {
 
         router.get("/about", homeController.getHomePage);
+
         router.post('/api/login', userController.handleLogin);
+        router.get('/api/get-all-users', userController.handleGetAllUsers);
         
         router.post('/test/create', CRUDController.CreateUserController);
         
